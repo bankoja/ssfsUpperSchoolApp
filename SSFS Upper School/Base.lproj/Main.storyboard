@@ -68,7 +68,7 @@
         <!--Lunch-->
         <scene sceneID="L6W-zO-8po">
             <objects>
-                <viewController title="Lunch" id="E3X-AC-LrF" sceneMemberID="viewController">
+                <viewController title="Lunch" id="E3X-AC-LrF" customClass="MenuViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OGU-85-yre"/>
                         <viewControllerLayoutGuide type="bottom" id="j4y-0i-cD9"/>
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOR-PC-opl">
-                                <rect key="frame" x="166" y="20" width="42" height="20"/>
+                                <rect key="frame" x="146" y="20" width="78" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
@@ -148,6 +148,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Lunch" id="qMa-Px-5tH"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="iOR-PC-opl" id="ivu-EY-yMh"/>
+                        <outlet property="downtownDeliText" destination="obc-Mq-hH1" id="qNB-UI-Wot"/>
+                        <outlet property="lunchEntreeText" destination="Dcv-Pb-Pbc" id="m0T-cb-mYV"/>
+                        <outlet property="sidesText" destination="qT4-2H-271" id="CQQ-Mg-AS0"/>
+                        <outlet property="vegetarianEntreeText" destination="unt-mZ-DeW" id="1Oc-Dt-zph"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFw-4l-bNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
