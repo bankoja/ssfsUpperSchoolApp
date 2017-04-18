@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0887E91E9E73FB00B10957 /* AfterSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0887E81E9E73FB00B10957 /* AfterSchoolViewController.swift */; };
 		1A0FD18F1E732E620046113C /* DailyMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD18D1E732E620046113C /* DailyMenu.swift */; };
 		1A0FD1901E732E620046113C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD18E1E732E620046113C /* Menu.swift */; };
 		1A0FD1941E732FCB0046113C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD1931E732FCB0046113C /* MenuViewController.swift */; };
@@ -16,6 +17,7 @@
 		1A400F401E65FEA100A6BFAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A400F3E1E65FEA100A6BFAB /* LaunchScreen.storyboard */; };
 		1A400F4B1E65FEA100A6BFAB /* SSFS_Upper_SchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F4A1E65FEA100A6BFAB /* SSFS_Upper_SchoolTests.swift */; };
 		1A400F561E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F551E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift */; };
+		1A75A6181E9D0EDC00E03CC6 /* AfterSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0887E81E9E73FB00B10957 /* AfterSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterSchoolViewController.swift; sourceTree = "<group>"; };
 		1A0FD18D1E732E620046113C /* DailyMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyMenu.swift; path = "../../../Downloads/SSFS-Lunch-master/SSFS Lunch/DailyMenu.swift"; sourceTree = "<group>"; };
 		1A0FD18E1E732E620046113C /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = "../../../Downloads/SSFS-Lunch-master/SSFS Lunch/Menu.swift"; sourceTree = "<group>"; };
 		1A0FD1931E732FCB0046113C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		1A400F511E65FEA100A6BFAB /* SSFS Upper SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SSFS Upper SchoolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A400F551E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSFS_Upper_SchoolUITests.swift; sourceTree = "<group>"; };
 		1A400F571E65FEA100A6BFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterSchool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				1A0FD1931E732FCB0046113C /* MenuViewController.swift */,
-				1A400F351E65FEA100A6BFAB /* AppDelegate.swift */,
-				1A400F391E65FEA100A6BFAB /* Main.storyboard */,
-				1A0FD18D1E732E620046113C /* DailyMenu.swift */,
 				1A0FD18E1E732E620046113C /* Menu.swift */,
+				1A0FD18D1E732E620046113C /* DailyMenu.swift */,
+				1A400F351E65FEA100A6BFAB /* AppDelegate.swift */,
+				1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */,
+				1A0887E81E9E73FB00B10957 /* AfterSchoolViewController.swift */,
+				1A400F391E65FEA100A6BFAB /* Main.storyboard */,
 				1A400F3C1E65FEA100A6BFAB /* Assets.xcassets */,
 				1A400F3E1E65FEA100A6BFAB /* LaunchScreen.storyboard */,
 				1A400F411E65FEA100A6BFAB /* Info.plist */,
@@ -266,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0FD1901E732E620046113C /* Menu.swift in Sources */,
+				1A75A6181E9D0EDC00E03CC6 /* AfterSchool.swift in Sources */,
 				1A0FD18F1E732E620046113C /* DailyMenu.swift in Sources */,
 				1A400F361E65FEA100A6BFAB /* AppDelegate.swift in Sources */,
 				1A0FD1941E732FCB0046113C /* MenuViewController.swift in Sources */,
+				1A0887E91E9E73FB00B10957 /* AfterSchoolViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

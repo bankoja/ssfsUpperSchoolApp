@@ -163,7 +163,7 @@
         <!--After School Activities-->
         <scene sceneID="CnY-jW-W2w">
             <objects>
-                <viewController title="After School Activities" id="hLS-VC-5Ec" sceneMemberID="viewController">
+                <viewController title="After School Activities" id="hLS-VC-5Ec" customClass="AfterSchoolViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Few-zc-bNm"/>
                         <viewControllerLayoutGuide type="bottom" id="54m-RE-xu2"/>

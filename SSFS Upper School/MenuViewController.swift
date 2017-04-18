@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  SSFS Lunch
 //
-//  Created by Claire Youmans on 4/25/16.
-//  Copyright © 2016 Claire Youmans. All rights reserved.
+//  Created by James Bankole on 2/28/17.
+//  Copyright © 2017 James Bankole. All rights reserved.
 //
 
 //Should I make it so that if the lunch isn't up on the website, it says "lunch unavailable currently" or something?
@@ -60,9 +60,10 @@ class MenuViewController: UIViewController {
             dayString = "FRIDAY(.*)"
             dayBool = true
         }
-        // This function links the return from the getCurrentDay function to the corresponding weekday and gets the information for the day by using the words in between that day and the following
+        // This function links the return from the getCurrentDay function to the corresponding weekday and gets the information for the day by using the words in between that day and the following. Claire Youmans created this function, I edited the if statements to correspond with my getCurrentDay function.
         let day = DailyMenu(regExText: dayString, isFriday: dayBool)
         dateLabel.text = weekdays[dayOfWeek! - 2]
+        // dayOfWeek starts at 2 (becuase Monday is returned as Optional(2) in the getCurrentDay function. So to make it correspond with the weekdays variable, there is a "- 2" so that the weekdays align.
         lunchEntreeText.text = day.lunchEntree
         vegetarianEntreeText.text = day.vegetarianEntree
         sidesText.text = day.sides
