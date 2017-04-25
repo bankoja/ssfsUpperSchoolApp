@@ -26,20 +26,24 @@ class AfterS {
     
     func getGames(dayOfWeek: Int) -> String {
         var name: String = ""
-        let regExText =  ">18<(.*?)</a>"
-        if let range = activity.range(of:regExText, options: .regularExpression) {
+        let regExText =  "<time datetime=\"([^\"]*)\"(.*?)</[Aa]>"
+        if let range = activity.range(of:regExText) {
             name = activity.substring(with:range)
         }
         do {
-            let regex = try NSRegularExpression(pattern: regExText, options: NSRegularExpression.Options.caseInsensitive)
+            let regex = try NSRegularExpression(pattern: regExText, options: NSRegularExpression.Options.dotMatchesLineSeparators)
             let matches = regex.matches(in: activity as String, options: [], range: NSMakeRange(0, activity.characters.count))
+            for match in matches{
+                name = (activity as NSString).substring(with: match.rangeAt(1))
+                print(name)
+            }
             if let match = matches.first {
                 name = (activity as NSString).substring(with: match.rangeAt(1))
+                
                 // These lines of code isolate the data that I intend to pull from the url. (Not successful so far).
             }
         } catch {
         }
-        
         return name
     }
     
