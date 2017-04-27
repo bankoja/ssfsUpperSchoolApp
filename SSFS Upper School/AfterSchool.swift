@@ -25,28 +25,35 @@ class AfterS {
     }
     
     func getGames(dayOfWeek: Int) -> String {
+        let regExText =  "\"fsDay\">\(dayOfWeek)<(.*?)a>"
+        let name = processRegEx(regExText: regExText, searchText: activity)
+        let regExTextTwo = "href=\"#\">(.*?)</"
+        let game = processRegEx(regExText: regExTextTwo, searchText: name)
+        print(game)
+        return game
+    }
+    func processRegEx(regExText: String, searchText:String) -> String {
         var name: String = ""
-        let regExText =  "<time datetime=\"([^\"]*)\"(.*?)</[Aa]>"
-        if let range = activity.range(of:regExText) {
-            name = activity.substring(with:range)
+        if let range = searchText.range(of:regExText) {
+            name = searchText.substring(with:range)
         }
         do {
             let regex = try NSRegularExpression(pattern: regExText, options: NSRegularExpression.Options.dotMatchesLineSeparators)
-            let matches = regex.matches(in: activity as String, options: [], range: NSMakeRange(0, activity.characters.count))
+            let matches = regex.matches(in: searchText as String, options: [], range: NSMakeRange(0, searchText.characters.count))
             for match in matches{
-                name = (activity as NSString).substring(with: match.rangeAt(1))
-                print(name)
+                name = (searchText as NSString).substring(with: match.rangeAt(1))
+                
             }
             if let match = matches.first {
-                name = (activity as NSString).substring(with: match.rangeAt(1))
+                name = (searchText as NSString).substring(with: match.rangeAt(1))
                 
-                // These lines of code isolate the data that I intend to pull from the url. (Not successful so far).
+                // These lines of code isolate the data that I intend to pull from the url. The function, getGames, uses a regular expression, regExText, and takes a small portion of info from the page source by identifying where the date of each event is. It calls the dayOfWeek variable to find all portions of information that correspond with the current date. It then sets that equal to name. The next regular expression, regExTwo, takes that portion of information from name and then pulls the title of the event from it. I am now trying to get the processRegEx function to do it for each event, I am currently unsuccessful.  
             }
+            
         } catch {
         }
         return name
     }
-    
     
 }
 
