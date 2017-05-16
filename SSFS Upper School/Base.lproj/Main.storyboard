@@ -12,7 +12,7 @@
         <!--Library-->
         <scene sceneID="fks-I8-h8A">
             <objects>
-                <viewController title="Library" id="Faj-yx-iye" sceneMemberID="viewController">
+                <viewController title="Library" id="Faj-yx-iye" customClass="LibraryViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZsG-eP-l3P"/>
                         <viewControllerLayoutGuide type="bottom" id="JuN-Uo-h9o"/>
@@ -31,39 +31,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Library" id="4ZB-H5-haI"/>
+                    <tabBarItem key="tabBarItem" title="Library/Beestro" id="4ZB-H5-haI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMf-cG-aU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="-223"/>
-        </scene>
-        <!--Beestro-->
-        <scene sceneID="l7w-Xa-fP8">
-            <objects>
-                <viewController title="Beestro" id="K60-BC-utT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bcY-eB-y2n"/>
-                        <viewControllerLayoutGuide type="bottom" id="kI8-wG-mxZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mke-EJ-D9N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BEESTRO BIH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMM-iO-48n">
-                                <rect key="frame" x="173" y="92" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Beestro" id="pgf-nJ-h8K"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pj3-1u-tGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="870" y="-224"/>
+            <point key="canvasLocation" x="102" y="-224"/>
         </scene>
         <!--Lunch-->
         <scene sceneID="L6W-zO-8po">
@@ -173,17 +145,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ovc-pW-wEN">
-                                <rect key="frame" x="75" y="129" width="240" height="408"/>
+                                <rect key="frame" x="75" y="129" width="240" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AFTER SCHOOL BRUH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcS-zY-h4w">
-                                <rect key="frame" x="99" y="51" width="176" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="After School Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcS-zY-h4w">
+                                <rect key="frame" x="99" y="51" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -191,6 +163,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="After School" id="S5X-qZ-dP9"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="tcS-zY-h4w" id="Jh6-mP-Ex1"/>
+                        <outlet property="gamesTodayText" destination="ovc-pW-wEN" id="ESL-ax-FwL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQf-Zy-1hQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,6 +175,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6Mj-8c-g8v">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rS9-9b-2yV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Iz1-pp-SYY" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hgf-1k-u4d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -207,12 +184,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="E3X-AC-LrF" kind="relationship" relationship="viewControllers" id="1cK-JS-kXr"/>
-                        <segue destination="Faj-yx-iye" kind="relationship" relationship="viewControllers" id="5am-jz-g2Z"/>
                         <segue destination="hLS-VC-5Ec" kind="relationship" relationship="viewControllers" id="V9t-fe-us4"/>
-                        <segue destination="K60-BC-utT" kind="relationship" relationship="viewControllers" id="8cm-cA-GnT"/>
+                        <segue destination="Faj-yx-iye" kind="relationship" relationship="viewControllers" id="5am-jz-g2Z"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rS9-9b-2yV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-849" y="-550"/>
         </scene>

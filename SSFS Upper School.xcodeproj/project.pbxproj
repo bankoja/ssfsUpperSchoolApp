@@ -11,13 +11,18 @@
 		1A0FD18F1E732E620046113C /* DailyMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD18D1E732E620046113C /* DailyMenu.swift */; };
 		1A0FD1901E732E620046113C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD18E1E732E620046113C /* Menu.swift */; };
 		1A0FD1941E732FCB0046113C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FD1931E732FCB0046113C /* MenuViewController.swift */; };
+		1A192E6B1EBA23D8007E1116 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A192E6A1EBA23D8007E1116 /* LibraryViewController.swift */; };
 		1A400F361E65FEA100A6BFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F351E65FEA100A6BFAB /* AppDelegate.swift */; };
 		1A400F3B1E65FEA100A6BFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A400F391E65FEA100A6BFAB /* Main.storyboard */; };
 		1A400F3D1E65FEA100A6BFAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A400F3C1E65FEA100A6BFAB /* Assets.xcassets */; };
 		1A400F401E65FEA100A6BFAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A400F3E1E65FEA100A6BFAB /* LaunchScreen.storyboard */; };
 		1A400F4B1E65FEA100A6BFAB /* SSFS_Upper_SchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F4A1E65FEA100A6BFAB /* SSFS_Upper_SchoolTests.swift */; };
 		1A400F561E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400F551E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift */; };
+		1A6897FD1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6897FC1EC340D600FD8A8C /* GoogleService-Info.plist */; };
+		1A6897FE1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6897FC1EC340D600FD8A8C /* GoogleService-Info.plist */; };
+		1A6897FF1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6897FC1EC340D600FD8A8C /* GoogleService-Info.plist */; };
 		1A75A6181E9D0EDC00E03CC6 /* AfterSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */; };
+		40AC493EFC97C7ECB3CDE4B5 /* Pods_SSFS_Upper_School.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6C81972D40FD650F7CC679 /* Pods_SSFS_Upper_School.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,7 @@
 		1A0FD18D1E732E620046113C /* DailyMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyMenu.swift; path = "../../../Downloads/SSFS-Lunch-master/SSFS Lunch/DailyMenu.swift"; sourceTree = "<group>"; };
 		1A0FD18E1E732E620046113C /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = "../../../Downloads/SSFS-Lunch-master/SSFS Lunch/Menu.swift"; sourceTree = "<group>"; };
 		1A0FD1931E732FCB0046113C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1A192E6A1EBA23D8007E1116 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		1A400F321E65FEA100A6BFAB /* SSFS Upper School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSFS Upper School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A400F351E65FEA100A6BFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A400F3A1E65FEA100A6BFAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +60,11 @@
 		1A400F511E65FEA100A6BFAB /* SSFS Upper SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SSFS Upper SchoolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A400F551E65FEA100A6BFAB /* SSFS_Upper_SchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSFS_Upper_SchoolUITests.swift; sourceTree = "<group>"; };
 		1A400F571E65FEA100A6BFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6897FC1EC340D600FD8A8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterSchool.swift; sourceTree = "<group>"; };
+		1D6C81972D40FD650F7CC679 /* Pods_SSFS_Upper_School.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSFS_Upper_School.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422AF9E29F1F4C45580C83A3 /* Pods-SSFS Upper School.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSFS Upper School.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSFS Upper School/Pods-SSFS Upper School.release.xcconfig"; sourceTree = "<group>"; };
+		DA0168A47D40CC40CA372D31 /* Pods-SSFS Upper School.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSFS Upper School.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSFS Upper School/Pods-SSFS Upper School.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AC493EFC97C7ECB3CDE4B5 /* Pods_SSFS_Upper_School.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +100,8 @@
 				1A400F491E65FEA100A6BFAB /* SSFS Upper SchoolTests */,
 				1A400F541E65FEA100A6BFAB /* SSFS Upper SchoolUITests */,
 				1A400F331E65FEA100A6BFAB /* Products */,
+				6F92D225CB63D0D33C1A2220 /* Pods */,
+				3107A03483DF2F1F28797FDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +124,8 @@
 				1A400F351E65FEA100A6BFAB /* AppDelegate.swift */,
 				1A75A6171E9D0EDB00E03CC6 /* AfterSchool.swift */,
 				1A0887E81E9E73FB00B10957 /* AfterSchoolViewController.swift */,
+				1A192E6A1EBA23D8007E1116 /* LibraryViewController.swift */,
+				1A6897FC1EC340D600FD8A8C /* GoogleService-Info.plist */,
 				1A400F391E65FEA100A6BFAB /* Main.storyboard */,
 				1A400F3C1E65FEA100A6BFAB /* Assets.xcassets */,
 				1A400F3E1E65FEA100A6BFAB /* LaunchScreen.storyboard */,
@@ -137,6 +152,23 @@
 			path = "SSFS Upper SchoolUITests";
 			sourceTree = "<group>";
 		};
+		3107A03483DF2F1F28797FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D6C81972D40FD650F7CC679 /* Pods_SSFS_Upper_School.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F92D225CB63D0D33C1A2220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA0168A47D40CC40CA372D31 /* Pods-SSFS Upper School.debug.xcconfig */,
+				422AF9E29F1F4C45580C83A3 /* Pods-SSFS Upper School.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A400F5A1E65FEA100A6BFAB /* Build configuration list for PBXNativeTarget "SSFS Upper School" */;
 			buildPhases = (
+				97D238B87163B315746B6008 /* [CP] Check Pods Manifest.lock */,
 				1A400F2E1E65FEA000A6BFAB /* Sources */,
 				1A400F2F1E65FEA000A6BFAB /* Frameworks */,
 				1A400F301E65FEA000A6BFAB /* Resources */,
+				23EC0063CCBA5907736A75FF /* [CP] Embed Pods Frameworks */,
+				639F2E6C1FEF9DE2B68451C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +240,7 @@
 				TargetAttributes = {
 					1A400F311E65FEA000A6BFAB = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 64643K84XW;
 						ProvisioningStyle = Automatic;
 					};
 					1A400F451E65FEA100A6BFAB = {
@@ -245,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A400F401E65FEA100A6BFAB /* LaunchScreen.storyboard in Resources */,
+				1A6897FD1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */,
 				1A400F3D1E65FEA100A6BFAB /* Assets.xcassets in Resources */,
 				1A400F3B1E65FEA100A6BFAB /* Main.storyboard in Resources */,
 			);
@@ -254,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6897FE1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +299,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6897FF1EC340D600FD8A8C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23EC0063CCBA5907736A75FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSFS Upper School/Pods-SSFS Upper School-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		639F2E6C1FEF9DE2B68451C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSFS Upper School/Pods-SSFS Upper School-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D238B87163B315746B6008 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A400F2E1E65FEA000A6BFAB /* Sources */ = {
@@ -275,6 +362,7 @@
 				1A75A6181E9D0EDC00E03CC6 /* AfterSchool.swift in Sources */,
 				1A0FD18F1E732E620046113C /* DailyMenu.swift in Sources */,
 				1A400F361E65FEA100A6BFAB /* AppDelegate.swift in Sources */,
+				1A192E6B1EBA23D8007E1116 /* LibraryViewController.swift in Sources */,
 				1A0FD1941E732FCB0046113C /* MenuViewController.swift in Sources */,
 				1A0887E91E9E73FB00B10957 /* AfterSchoolViewController.swift in Sources */,
 			);
@@ -426,8 +514,10 @@
 		};
 		1A400F5B1E65FEA100A6BFAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0168A47D40CC40CA372D31 /* Pods-SSFS Upper School.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64643K84XW;
 				INFOPLIST_FILE = "SSFS Upper School/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.SSFS-Upper-School";
@@ -438,8 +528,10 @@
 		};
 		1A400F5C1E65FEA100A6BFAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422AF9E29F1F4C45580C83A3 /* Pods-SSFS Upper School.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 64643K84XW;
 				INFOPLIST_FILE = "SSFS Upper School/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.SSFS-Upper-School";
