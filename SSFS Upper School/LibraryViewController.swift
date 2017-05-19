@@ -23,6 +23,9 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
         
         // Configure Google Sign-in.
         GIDSignIn.sharedInstance().delegate = self
@@ -41,7 +44,13 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         output.isHidden = true
         view.addSubview(output);
     }
-    
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        if (sender.direction == .right) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "AfterSchoolViewController")
+            self.present(vc, animated: false, completion: nil)
+        }
+    }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
               withError error: Error!) {
         if let error = error {

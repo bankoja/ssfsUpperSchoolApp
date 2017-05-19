@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iz1-pp-SYY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iz1-pp-SYY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Library-->
         <scene sceneID="fks-I8-h8A">
             <objects>
-                <viewController title="Library" id="Faj-yx-iye" customClass="LibraryViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryViewController" title="Library" id="Faj-yx-iye" customClass="LibraryViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZsG-eP-l3P"/>
                         <viewControllerLayoutGuide type="bottom" id="JuN-Uo-h9o"/>
@@ -40,7 +40,7 @@
         <!--Lunch-->
         <scene sceneID="L6W-zO-8po">
             <objects>
-                <viewController title="Lunch" id="E3X-AC-LrF" customClass="MenuViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" title="Lunch" id="E3X-AC-LrF" customClass="MenuViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OGU-85-yre"/>
                         <viewControllerLayoutGuide type="bottom" id="j4y-0i-cD9"/>
@@ -135,7 +135,7 @@
         <!--After School Activities-->
         <scene sceneID="CnY-jW-W2w">
             <objects>
-                <viewController title="After School Activities" id="hLS-VC-5Ec" customClass="AfterSchoolViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AfterSchoolViewController" title="After School Activities" id="hLS-VC-5Ec" customClass="AfterSchoolViewController" customModule="SSFS_Upper_School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Few-zc-bNm"/>
                         <viewControllerLayoutGuide type="bottom" id="54m-RE-xu2"/>
@@ -175,7 +175,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="6Mj-8c-g8v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rS9-9b-2yV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Iz1-pp-SYY" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hgf-1k-u4d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -188,6 +187,7 @@
                         <segue destination="Faj-yx-iye" kind="relationship" relationship="viewControllers" id="5am-jz-g2Z"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rS9-9b-2yV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-849" y="-550"/>
         </scene>

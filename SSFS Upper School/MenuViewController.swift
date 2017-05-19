@@ -73,9 +73,18 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dayOfWeek()
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        leftSwipe.direction = .left
+        view.addGestureRecognizer(leftSwipe)
        
     }
-    
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        if (sender.direction == .left) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "AfterSchoolViewController")
+            self.present(vc, animated: false, completion: nil)
+        }
+    }
     func getCurrentDay()->Int?{
         let date = Date()
         let calendar = Calendar.current

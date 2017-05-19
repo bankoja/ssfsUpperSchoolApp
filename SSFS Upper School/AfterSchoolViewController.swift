@@ -18,7 +18,25 @@ class AfterSchoolViewController: UIViewController {
         let activities = afterSchool.getGames(dayOfWeek: getCurrentDay()!)
         gamesTodayText.text = activities
         dayOfWeek()
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        leftSwipe.direction = .left
+        view.addGestureRecognizer(leftSwipe)
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
+        rightSwipe.direction = .right
+        view.addGestureRecognizer(rightSwipe)
         // Do any additional setup after loading the view. The "let activities" sends the date to the getGames function in my after school file, and then runs it in this file.
+    }
+    func handleSwipes(sender:UISwipeGestureRecognizer) {
+        if (sender.direction == .left) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LibraryViewController")
+            self.present(vc, animated: false, completion: nil)
+        }
+        else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MenuViewController")
+            self.present(vc, animated: false, completion: nil)
+        }
     }
     func dayOfWeek() {
         let dayOfWeek = getCurrentDay()
