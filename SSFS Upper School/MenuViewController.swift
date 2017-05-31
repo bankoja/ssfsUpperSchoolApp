@@ -20,22 +20,24 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     
-    @IBOutlet weak var lunchEntreeText: UITextView!
+    
+    @IBOutlet weak var lunchEntreeText: UILabel!
     
     
     
     @IBOutlet weak var vegetarianEntreeLabel: UILabel!
-    @IBOutlet weak var vegetarianEntreeText: UITextView!
+    
+    @IBOutlet weak var vegetarianEntreeText: UILabel!
     
     
     
     
     @IBOutlet weak var sidesLabel: UILabel!
-    @IBOutlet weak var sidesText: UITextView!
+    @IBOutlet weak var sidesText: UILabel!
     
     
     @IBOutlet weak var downtownDeliLabel: UILabel!
-    @IBOutlet weak var downtownDeliText: UITextView!
+    @IBOutlet weak var downtownDeliText: UILabel!
     
     
     

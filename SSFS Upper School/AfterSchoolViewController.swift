@@ -12,7 +12,7 @@ class AfterSchoolViewController: UIViewController {
     let afterSchool = AfterS()
     var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var gamesTodayText: UITextView!
+    @IBOutlet weak var gamesTodayText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let activities = afterSchool.getGames(dayOfWeek: getCurrentDay()!)
@@ -39,9 +39,19 @@ class AfterSchoolViewController: UIViewController {
         }
     }
     func dayOfWeek() {
-        let dayOfWeek = getCurrentDay()
-        //dateLabel.text = weekdays[dayOfWeek! - 1]
+        let dayOfWeek = getCurrentDate()
+        dateLabel.text = weekdays[dayOfWeek! - 2]
         // pasted into here to get day of the week at the top of the screen (See MenuViewController)
+    }
+    func getCurrentDate()->Int?{
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        let day = components.weekday
+        // pasted into here to get day of the week at the top of the screen (See MenuViewController)
+        
+        return day
+        // code from http://stackoverflow.com/questions/28861091/getting-the-current-day-of-the-week-in-swift . This code gets the day of the current date as an integer (Unlike code in menu view controller, this returns the date instead of the day of week).
     }
     func getCurrentDay()->Int?{
         let date = Date()

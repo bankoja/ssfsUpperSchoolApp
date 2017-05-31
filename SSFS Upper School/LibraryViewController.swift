@@ -21,6 +21,9 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     let signInButton = GIDSignInButton()
     let output = UITextView()
     
+    @IBOutlet weak var libraryTimes: UILabel!
+    @IBOutlet weak var beestroTimes: UILabel!
+    @IBOutlet weak var outages: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(sender:)))
@@ -37,12 +40,12 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         view.addSubview(signInButton)
         
         // Add a UITextView to display output.
-        output.frame = view.bounds
-        output.isEditable = false
-        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
-        output.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        output.isHidden = true
-        view.addSubview(output);
+//        output.frame = view.bounds
+//        output.isEditable = false
+//        output.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+//        output.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+//        output.isHidden = true
+//        view.addSubview(output);
     }
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         if (sender.direction == .right) {
@@ -68,9 +71,11 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     // spreadsheet:
     // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
     func listMajors() {
-        output.text = "Getting sheet data..."
+        libraryTimes.text = "Getting sheet data..."
+        beestroTimes.text = "Getting sheet data..."
+        outages.text = "Getting sheet data..."
         let spreadsheetId = "1Fk3XgNwrD51I4sPy-vsBkc0o2HrKewiuiiP4siE3s3k"
-        let range = "Sheet1!A2:E20"
+        let range = "Sheet1!A2:I20"
         let query = GTLRSheetsQuery_SpreadsheetsValuesGet
             .query(withSpreadsheetId: spreadsheetId, range:range)
         service.executeQuery(query,
@@ -89,23 +94,42 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
             return
         }
         
-        var majorsString = ""
+        var libraryString = ""
+        var beestroString = ""
+        //var outagesString = ""
         let rows = result.values!
         
         if rows.isEmpty {
-            output.text = "No data found."
+            libraryTimes.text = "No data found."
+            return
+        }
+        if rows.isEmpty {
+            beestroTimes.text = "No data found."
+            return
+        }
+        if rows.isEmpty {
+            outages.text = "No data found."
             return
         }
         
-        majorsString += "Name, Major:\n"
+        libraryString += "Library Hours:\n"
+        beestroString += "Beestro Hours:\n"
+        //outagesString += "Beestro Outages: \n"
         for row in rows {
-            let name = row[0]
-            let major = row[4]
+            let libraryDate = row[0]
+            let libraryOpening = row[4]
+            let beestroDate = row[0]
+            let beestroOpening = row[6]
+            //let outagesOpening = row[7]
             
-            majorsString += "\(name), \(major)\n"
+            libraryString += "\(libraryDate), \(libraryOpening)\n"
+            beestroString += "\(beestroDate), \(beestroOpening)\n"
+            //outagesString += "\(outagesOpening)\n"
         }
         
-        output.text = majorsString
+        libraryTimes.text = libraryString
+        beestroTimes.text = beestroString
+        //outages.text = outagesString
     }
     
     
