@@ -96,7 +96,7 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         
         var libraryString = ""
         var beestroString = ""
-        //var outagesString = ""
+        var outagesString = ""
         let rows = result.values!
         
         if rows.isEmpty {
@@ -114,22 +114,22 @@ class LibraryViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         
         libraryString += "Library Hours:\n"
         beestroString += "Beestro Hours:\n"
-        //outagesString += "Beestro Outages: \n"
+        outagesString += "Beestro Outages: \n"
         for row in rows {
             let libraryDate = row[0]
             let libraryOpening = row[4]
             let beestroDate = row[0]
             let beestroOpening = row[6]
-            //let outagesOpening = row[7]
+            let outagesOpening = row[7]
             
             libraryString += "\(libraryDate), \(libraryOpening)\n"
             beestroString += "\(beestroDate), \(beestroOpening)\n"
-            //outagesString += "\(outagesOpening)\n"
+            outagesString += "\(outagesOpening)\n"
         }
         
         libraryTimes.text = libraryString
         beestroTimes.text = beestroString
-        //outages.text = outagesString
+        outages.text = outagesString
     }
     
     

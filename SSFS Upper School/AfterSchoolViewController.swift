@@ -46,7 +46,7 @@ class AfterSchoolViewController: UIViewController {
     func getCurrentDate()->Int?{
         let date = Date()
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        let components = calendar.dateComponents([.year, .month, .weekday], from: date)
         let day = components.weekday
         // pasted into here to get day of the week at the top of the screen (See MenuViewController)
         
